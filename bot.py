@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='[')
+Token = ''
 
 @bot.event
 async def on_ready():
@@ -17,4 +18,4 @@ async def on_member_remove(member):
   channel = bot.get_channel(702443826916229160)
   await channel.send(f'{member} leave!')
 
-bot.run('NzAyNDM1OTgxOTYxMzMwNzQ5.XqABaA.JjoEHmcnFLEWB_AwAGw3Mpf_Ktc')
+bot.run('')
